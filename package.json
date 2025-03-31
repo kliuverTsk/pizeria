@@ -1,4 +1,5 @@
 {
+  "name": "pizeria",
   "homepage": "https://kliuvertsk.github.io/pizeria",
   "scripts": {
     "dev": "vite",
