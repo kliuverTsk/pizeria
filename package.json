@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kliuverTsk/pizeria.git",
+  "homepage": "https://kliuvertsk.github.io/pizeria",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
