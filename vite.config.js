@@ -5,6 +5,11 @@ export default defineConfig({
   plugins: [react()],
   base: '/pizeria/',
   build: {
-    target: 'es2015'
+    target: 'es2015',
+    rollupOptions: {
+      output: {
+        format: 'iife'
+      }
+    }
   }
 })
