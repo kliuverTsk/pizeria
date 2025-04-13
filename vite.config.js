@@ -5,6 +5,17 @@ export default defineConfig({
   plugins: [react()],
   base: '/pizeria/',
   build: {
-    outDir: 'dist'
-  }
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  server: {
+    headers: {
+      'Content-Type': 'application/javascript',
+    },
+  },
 })
