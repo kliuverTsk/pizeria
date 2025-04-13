@@ -39,7 +39,7 @@ Mensaje: ${formData.mensaje}`;
           <p>Reserva tu mesa o envíanos tus consultas</p>
           <div className="info-item">
             <i className="fas fa-phone"></i>
-            <p>+34 123 456 789</p>
+            <p>+55 11949749057</p>
           </div>
           <div className="info-item">
             <i className="fas fa-envelope"></i>
