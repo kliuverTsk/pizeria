@@ -5,11 +5,22 @@ export default defineConfig({
   plugins: [react()],
   base: '/pizeria/',
   build: {
-    target: 'es2015',
+    target: 'esnext',
     rollupOptions: {
       output: {
-        format: 'es'
+        format: 'systemjs',
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
       }
+    },
+    modulePreload: {
+      polyfill: true
+    }
+  },
+  server: {
+    headers: {
+      'Content-Type': 'application/javascript'
     }
   }
 })
