@@ -5,11 +5,9 @@ export default defineConfig({
   plugins: [react()],
   base: '/pizeria/',
   build: {
-    target: 'es2015',
-    rollupOptions: {
-      output: {
-        format: 'iife'
-      }
-    }
+    outDir: 'dist',
+    target: 'modules',
+    assetsDir: 'assets',
+    emptyOutDir: true
   }
 })
